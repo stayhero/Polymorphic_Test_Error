@@ -33,7 +33,7 @@ bundle exec rake test:units
 
 
 
-I've tried to simplify my existing database model as much as possible, so I can showcase the error with four models. Basically we have a Company, which has one or more departments. Each department has one or more users.
+I've tried to simplify my existing database model as much as possible, so I can showcase the error with five models. Basically we have a Company, which has one or more departments. Each department has one or more users.
 
 And now via polymorphic association each user can either have a  Designer or Developer entity.
 
