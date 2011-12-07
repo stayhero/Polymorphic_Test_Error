@@ -1,5 +1,4 @@
 class Company < ActiveRecord::Base
-
   has_many :departments
   has_many :users, through: :departments
   has_many :developers, source_type: 'Developer', source: :typeable  , through: :users

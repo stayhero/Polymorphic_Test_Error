@@ -5,7 +5,6 @@ class CreateUsers < ActiveRecord::Migration
       t.integer  :typeable_id
       t.string   :typeable_type
       t.references :department
-
       t.timestamps
     end
   end
