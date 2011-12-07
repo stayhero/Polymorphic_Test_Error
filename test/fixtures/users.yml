@@ -1,0 +1,15 @@
+
+
+first:
+  id: 1
+  name: Fritz the Developer
+  typeable_id: 1
+  typeable_type: Developer
+  department_id: 1
+
+second:
+  id: 2
+  name: Marc the Designer
+  typeable_id: 1
+  typeable_type: Designer
+  department_id: 2

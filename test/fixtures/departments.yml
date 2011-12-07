@@ -1,0 +1,12 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+
+first:
+  id: 1
+  title: Development Department
+  company_id: 1
+
+second:
+  id: 2
+  title: Design Department
+  company_id: 1
