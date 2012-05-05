@@ -1,7 +1,10 @@
 Today I faced a very weird error using polymorphic associations. In the rails console everything does almost often work, but the unit tests are failing all the time.
 
-I setup a test Rails 3.1.3. app here (using SQLlite, but same error happens with mysql)
+I setup a test Rails 3.1.3. (**edit: upgraded to 3.2.3**) app here (using SQLlite, but same error happens with mysql)
 https://github.com/easychris/Polymorphic_Test_Error
+
+See also this issue:
+https://github.com/rails/rails/issues/3882
 
 To see the problem simply
 
@@ -121,8 +124,4 @@ class Developer < ActiveRecord::Base
   has_one :user, :as => :typeable
 end
 ````
-
-BTW: I wanted to try with latest master, but after changing Gemfile to use rails edge, bundle install told me this:
-*Could not find gem 'arel (~> 3.0.0.pre) ruby', which is required by gem 'rails (>= 0) ruby', in any of the sources.*
-
 
