@@ -1,35 +1,19 @@
-source 'http://rubygems.org'
+source 'https://rubygems.org'
 
-gem 'rails', '3.2.3'
-
-# Bundle edge Rails instead:
-# gem 'rails',     :git => 'git://github.com/rails/rails.git'
-
+gem 'rails',     :git => 'git://github.com/rails/rails.git', :branch => 'master'
+gem 'active_record_deprecated_finders', git: 'git://github.com/rails/active_record_deprecated_finders.git'
+gem 'journey',   :git => 'git://github.com/rails/journey.git'
+gem 'arel',      :git => 'git://github.com/rails/arel.git'
 gem 'sqlite3'
 
 # Gems used only for assets and not required
 # in production environments by default.
 group :assets do
-  gem 'sass-rails'
-  gem 'coffee-rails'
-  gem 'uglifier'
-end
+  gem 'sass-rails',   :git => 'git://github.com/rails/sass-rails.git', :branch => 'master'
+  gem 'coffee-rails', :git => 'git://github.com/rails/coffee-rails.git', :branch => 'master'
 
-gem 'jquery-rails'
+  # See https://github.com/sstephenson/execjs#readme for more supported runtimes
+  # gem 'therubyracer', :platform => :ruby
 
-# To use ActiveModel has_secure_password
-# gem 'bcrypt-ruby', '~> 3.0.0'
-
-# Use unicorn as the web server
-# gem 'unicorn'
-
-# Deploy with Capistrano
-# gem 'capistrano'
-
-# To use debugger
-# gem 'ruby-debug19', :require => 'ruby-debug'
-
-group :test do
-  # Pretty printed test output
-  gem 'turn', '~> 0.8.3', :require => false
+  gem 'uglifier', '>= 1.0.3'
 end
