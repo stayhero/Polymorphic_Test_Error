@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 
 gem 'rails',     :git => 'git://github.com/rails/rails.git', :branch => 'master'
-gem 'active_record_deprecated_finders', git: 'git://github.com/rails/active_record_deprecated_finders.git'
+#gem 'active_record_deprecated_finders', git: 'git://github.com/rails/active_record_deprecated_finders.git'
 gem 'journey',   :git => 'git://github.com/rails/journey.git'
 gem 'arel',      :git => 'git://github.com/rails/arel.git'
 gem 'sqlite3'
